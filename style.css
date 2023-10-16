@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantora+One&family=Mooli&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+body{
+    background: url(./img/background.png);
+}
+
+img {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.task:hover img {
+    opacity: 1;    
+}
+
+.container{
+    background-color: #d1d1d1;
+    width: 500px;
+    padding: 20px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    font-family: font-family: 'Mooli', sans-serif;
+    font-family: 'Yomogi', cursive;; 
+}
+
+.input-task{
+    border:none;
+    border-radius: 5px;
+    height: 40px;
+    width: 330px;
+    padding-left: 15px;
+    font-family: 'Cantora One', sans-serif;
+    font-family: 'Mooli', sans-serif;
+}
+
+.button-add-task{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #24642e;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Cantora One', sans-serif;
+    font-family: 'Mooli', sans-serif;
+}
+.button-add-task:hover{
+    opacity: 0.8;
+}
+.button-add-task:active{
+    opacity: 0.6;
+}
+.list-tasks{
+    width: 100%;
+    list-style: none;
+    margin-top: 20px;
+}
+.task{
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgb(0, 0,0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-family: 'Cantora One', sans-serif;
+    font-family: 'Mooli', sans-serif;
+}
+.done{
+    background-color: #71ec84;
+    text-decoration: line-through;
+}
